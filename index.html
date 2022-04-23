@@ -12,6 +12,27 @@
  	 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+	    <script>
+      document.onkeydown = function(e) {
+        return !(e.ctrlKey &&
+                (e.keyCode === 117 || e.keyCode === 85 || e.keyCode === 86 || e.keyCode === 67));
+      };
+
+      function $(document) {
+        
+      }
+
+      $(document).keypress("u",function(e) {
+        if(e.ctrlKey)
+        {
+          return false;
+        }
+        else
+        {
+          return true;
+        }
+      });
+    </script>
 
 	<div class="container">
 		<aside>
